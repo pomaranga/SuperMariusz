@@ -20,3 +20,10 @@ class Platformy():
 class Drzwi():
     fill(150, 75, 0)
     drzwi1 = ellipse(710, 350, 100, 100)
+    
+class Klucz():
+    loadImage('key.png'(70, 80))
+    
+class Klucz():
+    klucz = loadImage('key.png')
+    image(klucz, 85, 80, 20, 20)
