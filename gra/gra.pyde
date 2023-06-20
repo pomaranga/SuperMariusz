@@ -22,7 +22,7 @@ def draw():
             image(sm_Walk, pos_x, pos_y)
         else:
             image(sm_Stand, pos_x, pos_y)
-        print (is_walk)
+        #https://py.processing.org/reference/rotateY.html
         
     if keyPressed:
         if key == 'd': #prawo
