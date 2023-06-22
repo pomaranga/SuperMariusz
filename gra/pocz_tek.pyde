@@ -10,11 +10,12 @@ def draw():
     text("START", 235, 395)
     
 def mouseClicked(): 
-    global value, clr
-    if value == 255:
-        value = 0
-    if clr == 127:
-        clr = 0
+    if mouseX>=250 and mouseX<=420 and mouseY>=330 and mouseY<=430:
+        global value, clr
+        if value == 255:
+            value = 0
+        if clr == 127:
+            clr = 0
         
 def setup():
     size(600, 600)
