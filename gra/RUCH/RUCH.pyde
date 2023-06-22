@@ -10,13 +10,13 @@ def setup():
 def draw():
     global x, y, img
     background(204)
-    if ((keyPressed) and (key == 'A')):  # If the key is pressed
-        x -= 1   # add 1 to x 
-    if ((keyPressed) and (key == 'D')): 
+    if keyCode == LEFT and keyPressed == True:  
+        x -= 1   
+    if keyPressed== True and keyCode == RIGHT: 
         x += 1   
-    if ((keyPressed) and (key == 'S')):  # If the key is pressed
-        y += 1   # add 1 to x 
-    if ((keyPressed) and (key == 'W')): 
+    if keyPressed == True and keyCode == DOWN: 
+        y += 1  
+    if keyCode == UP and keyPressed == True: 
         y -= 1   
     
     image(img, x, y, -40, 80)
