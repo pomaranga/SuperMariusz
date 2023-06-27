@@ -1,7 +1,14 @@
 import time
+
+class Klucz():
+    def __init__(self):
+        klucz = loadImage("key.png")
+        image(klucz, 85, 80, 20, 20)
+
 def setup():
     size (1000, 500) #do zmiany
-    
+    klucz = loadImage("key.png")
+    image(klucz, 85, 80, 20, 20)
     global pos_x, pos_y, sm_Stand, sm_Walk, sm_Jump, is_walk, is_flipped, sm_StandFlipped, sm_WalkFlipped, sm_JumpFlipped
     pos_x=0
     pos_y=0
@@ -17,6 +24,8 @@ def setup():
 def draw():
     global pos_x, pos_y, sm_Stand, sm_Walk, is_walk, is_flipped, sm_StandFlipped, sm_WalkFlipped, sm_JumpFlipped
     clear()
+    
+    klucz = Klucz()
     
     def FlipCheck(noflip,flip):
         if is_flipped == True:
@@ -54,4 +63,6 @@ def draw():
             pos_y+=5
     else:
         FlipCheck(sm_Stand, sm_StandFlipped)
-            
+        
+        
+        
