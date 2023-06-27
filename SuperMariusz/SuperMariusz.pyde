@@ -29,9 +29,9 @@ def draw():
     
     def FlipCheck(noflip,flip):
         if is_flipped == True:
-            image(flip, pos_x, pos_y)
+            image(flip, pos_x, pos_y, 100, 100)
         else:
-            image(noflip, pos_x, pos_y)
+            image(noflip, pos_x, pos_y, 100, 100)
     
     def sm_walk():
         global is_walk
