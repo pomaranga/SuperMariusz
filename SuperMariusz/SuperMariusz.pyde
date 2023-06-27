@@ -4,6 +4,11 @@ class Klucz():
     def __init__(self):
         klucz = loadImage("key.png")
         image(klucz, 85, 80, 20, 20)
+        
+class Drzwi():
+    def __init__(self):
+        fill(150, 75, 0)
+        drzwi1 = ellipse(710, 350, 100, 100)
 
 def setup():
     size (1000, 500) #do zmiany
@@ -26,6 +31,7 @@ def draw():
     clear()
     
     klucz = Klucz()
+    drzwi = Drzwi()
     
     def FlipCheck(noflip,flip):
         if is_flipped == True:
