@@ -20,6 +20,10 @@ class Platformy():
 class Drzwi():
     fill(150, 75, 0)
     drzwi1 = ellipse(710, 350, 100, 100)
+
+class Napis():
+    napis = loadImage('SUPERMARIUSZnapis.png')
+    image(napis, 300, 50, 200, 35)
     
     
 class Klucz():
