@@ -31,7 +31,8 @@ na_drzwiach = False
 def setup():
     size(1000, 500)
     global klucz, drzwi, pos_x, pos_y, sm_Stand, sm_Walk, sm_Jump, is_walk, is_flipped, sm_StandFlipped, sm_WalkFlipped, sm_JumpFlipped
-    
+    text_size = 40
+    textSize(text_size)  
     pos_x = 0
     pos_y = 0
     sm_Stand = loadImage("SuperMariuszSpriteStand.png")
@@ -48,9 +49,18 @@ def setup():
 
 def draw():
     global pos_x, pos_y, sm_Stand, sm_Walk, is_walk, is_flipped, sm_StandFlipped, sm_WalkFlipped, sm_JumpFlipped, victory, na_drzwiach
-    
     background(0)
-    
+    fill(30, 200, 0)
+    rect(375, 275, 175, 15)
+    rect(20, 90, 50, 20)
+    rect(600, 225, 70, 15)
+    rect(700, 175, 50, 20)
+    rect(100, 375, 70, 15)
+    rect(250, 255, 50, 20)
+    rect(400, 125, 230, 15)
+    rect(280, 175, 30, 20)
+    rect(180, 175, 30, 20)
+    fill(150, 75, 0)
     fill(drzwi.kolor_drzwi)
     drzwi.drzwi1 = ellipse(710, 350, 100, 100)
     
@@ -110,10 +120,10 @@ def draw():
             pos_y += 5
     else:
         FlipCheck(sm_Stand, sm_StandFlipped)
-        
+    
     if not klucz.klucz_podniesiony:
         image(klucz.klucz, 85, 80, 20, 20)
-        
+    
     
     
         
